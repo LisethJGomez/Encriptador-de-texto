@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <!-- Encabezado -->
+        <header>
+            <img class="logo" src="assets/Logo Negro-sin fondo.png" alt="Logo de autor">
+            <img class="alogo" src="assets/Logo alura blanco.png" alt="Logo de alura">
+        </header>
+        <main>
+        <div id="contenido">
+            <!-- Contenido Entrada y Botones -->
+            <section>
+              <textarea type="text" id="entrada" placeholder="Ingrese el texto aqui:"></textarea>
+              <br>
+              <div>
+                  <!-- icon Info -->
+                  <p id="informacion">
+                      <img src="assets/info.png" alt="Icon informacion" id="icon">
+                      Solo letras minúsculas y sin acentos
+                  </p>
+                  <div class="botones">
+                      <button id="botonEncriptar" onclick="encriptar()">ENCRIPTAR</button>
+                      <button id="botonDesencriptar" onclick="desencriptar()">DESENCRIPTAR</button>
+                  </div>
+              </div>
+            </section>
+            <!-- Contenido Salida -->
+            <aside>
+              <img src="assets/magic.gif" alt="Cargando" id="imagen" />
+              <div>
+                  <h2 id="subtSalida">Ningún mensaje fue encontrado</h2>
+                  <p id="salida">Ingresa el texto que desees encriptar o desencriptar.</p>
+              </div>
+              <button class="botones" id="botonCopiar" onclick="copiar()">COPIAR</button>
+            </aside>
+          </div>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="creador">Create by 
+                <a href="https://github.com/LisethJGomez" target="_blank" class="usuario">
+                    @LisethJGomez
+                </a>
+            </p>
+            <div>
+                <a href="https://github.com/LisethJGomez" target="_blank">
+                    <img class="links" src="./assets/github.png" />
+                </a>
+    
+                <a href="https://www.linkedin.com/in/liseth-gomez-aa4880314/" target="_blank">
+                    <img class="links" src="./assets/linkedin.png" />
+                </a>
+
+                <a href="https://www.instagram.com/jg_moony/" target="_blank">
+                    <img class="links" src="./Assets/instagram.png"/>
+                </a>
+            </div>
+        </footer>
+          <!-- Script -->
+          <script src="FuncionEncriptador.js"></script>
+        </body>
+      </html>
